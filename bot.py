@@ -74,8 +74,8 @@ async def start(message: Message):
 async def makePost(message: Message):
     await message.delete()
     kb = InlineKeyboardBuilder()
-    kb.add(InlineKeyboardButton(text="подарок 🎁", callback_data="gift"))
-    await bot.send_message(chat_id=MAIN_CHANNEL, text="Нажмите на кнопку для получения подарка!",
+    kb.add(InlineKeyboardButton(text="Подарок 🎁", callback_data="gift"))
+    await bot.send_message(chat_id=MAIN_CHANNEL, text="Здесь Вы можете забрать свой подарок. Нажмите кнопку Подарок 🎁",
                            reply_markup=kb.as_markup())
 
 
