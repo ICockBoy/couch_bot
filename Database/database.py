@@ -6,7 +6,7 @@ class DataBase:
 
     def __init__(self):
         with open("Database/users.json", 'r') as _:
-            self.data: dict[str: list] = json.load(_)
+            self.data = json.load(_)
 
     def addUserId(self, userId: str):
         temp: set = {*self.data["userId"]}
