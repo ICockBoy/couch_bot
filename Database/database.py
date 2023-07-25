@@ -14,7 +14,7 @@ class DataBase:
         self.data["userId"] = list(temp)
         self.__save()
 
-    def getUserIds(self) -> list[str]:
+    def getUserIds(self):
         return self.data["userId"]
 
     def __save(self):
